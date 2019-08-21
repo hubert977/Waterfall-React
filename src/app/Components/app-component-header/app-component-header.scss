@@ -11,12 +11,11 @@ header
         display: flex;
         flex: 1;
         justify-content: flex-start;
+        align-items: center;
         margin-left: 20px;
-        margin-top: 20px;
         font-family: 'Hepta Slab', serif;
         color: white;
         background-color: transparent;
-        align-items: center;
         .LogoWaterfall
         {
             margin-left: 20px;
@@ -24,13 +23,30 @@ header
         .Waterfall-image
         {
             margin-left: 20px;
+            margin-top: 10px;
+            
         }
     }
     .Menu
     {
         display: flex;
+        align-items: center;
+        justify-content: first baseline;
         flex: 3;
         color: white;
+        ul 
+        {
+            display: flex;
+            align-items: center;
+            margin-left: 200px;
+            list-style-type: none;
+            list-style: none;
+            li:not(:first-child)
+            {
+                margin-left: 50px;
+            }
+        }
+       
     }
     
 }

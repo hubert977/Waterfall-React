@@ -12,9 +12,13 @@ class Header extends React.Component {
                     <p className="LogoWaterfall">WATERFALL</p>
                     <img src={logo} className="Waterfall-image" />
             </section>
-            <section className="Menu">
-            </section>
-           
+            <nav className="Menu">
+                <ul>
+                <li>Home</li>   
+                <li>Article</li>
+                <li>Contact</li>   
+                </ul> 
+            </nav>
         </header>
          <video autoPlay muted loop id="waterfall" className="waterfall">
          <source src={video} type="video/mp4"/>
