@@ -23,7 +23,26 @@ module.exports = {
     {
       test: /\.css$/i,
       use: ['style-loader', 'css-loader'],
-    },    ]
+    },
+    {
+      test: /\.(png|jpg|gif)$/i,
+      use: [
+        {
+          loader: 'url-loader',
+          options: {
+            limit: 8192,
+          },
+        },
+      ],
+    },
+    {
+      test: /\.html$/,
+      loader: 'html-loader?attrs[]=video:src'
+    }, {
+      test: /\.mp4$/,
+      loader: 'url?limit=10000&mimetype=video/mp4'
+    },
+      ]
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -38,4 +57,5 @@ module.exports = {
     port: 9000,
     hot: true
   }
+
 };

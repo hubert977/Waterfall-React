@@ -2,23 +2,44 @@ header
 {
     display: flex;
     width: 100%;
-    height: 50px;
+    height: 64px;
     flex-direction: row;
     position: fixed;
+    z-index: 9999;
     .Logo
     {
         display: flex;
         flex: 1;
         justify-content: flex-start;
         margin-left: 20px;
+        margin-top: 20px;
         font-family: 'Hepta Slab', serif;
         color: white;
         background-color: transparent;
+        align-items: center;
+        .LogoWaterfall
+        {
+            margin-left: 20px;
+        }
+        .Waterfall-image
+        {
+            margin-left: 20px;
+        }
     }
     .Menu
     {
         display: flex;
-        flex: 1;
+        flex: 3;
         color: white;
     }
+    
 }
+.waterfall
+    {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        object-fit: fill;
+        height: 100%;
+    }
